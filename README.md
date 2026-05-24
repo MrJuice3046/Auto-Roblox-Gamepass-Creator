@@ -42,7 +42,7 @@ GAME_ID=your_universe_id_here
 PORT=3000
 ```
 
-- `ROBLOX_API_KEY` — Generate this at [create.roblox.com/credentials](https://create.roblox.com/credentials). Make sure it has permission to create gamepasses.
+- `ROBLOX_API_KEY` — Generate this at [create.roblox.com/credentials](https://create.roblox.com/dashboard/credentials?activeTab=ApiKeysTab). Make sure it has permission to create gamepasses.
 - `GAME_ID` — Your game's **Universe ID** (found in Creator Dashboard under your game's settings).
 - `PORT` — The port the server runs on. Defaults to `3000` if not set.
 
