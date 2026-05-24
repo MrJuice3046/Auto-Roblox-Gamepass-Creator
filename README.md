@@ -55,43 +55,6 @@ The server will be running at `http://localhost:3000`.
 
 ---
 
-## Usage
-
-Send a POST request to `/api/create-gamepass` with a JSON body:
-
-```json
-{
-  "price": 100
-}
-```
-
-**Example using curl:**
-```bash
-curl -X POST http://localhost:3000/api/create-gamepass \
-  -H "Content-Type: application/json" \
-  -d '{"price": 100}'
-```
-
-**Successful response:**
-```json
-{
-  "success": true,
-  "gamePassId": "123456789",
-  "name": "Donate 100 Robux",
-  "price": 100,
-  "link": "https://www.roblox.com/game-pass/123456789"
-}
-```
-
-The server automatically handles duplicate names by appending a counter (e.g. `Donate 100.1 Robux`) if a gamepass with that name already exists.
-
-You can also check the server status at:
-```
-GET http://localhost:3000/api/status
-```
-
----
-
 ## Security
 
 - **Never commit your `.env` file.** Make sure `.env` is listed in your `.gitignore`.
